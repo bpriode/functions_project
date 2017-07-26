@@ -5,11 +5,12 @@
 function max(num1,num2){
     if (num1>num2){
       return num1;
-    }if (num1<num2){
+    }else if (num1<num2){
         return num2;
-    }else
+    }else {
         return num3;
   }
+}
     console.log(max(5,14));
 
 // 2.
@@ -21,8 +22,9 @@ function maxOfThree(num1,num2,num3){
       return num1;
     } if (num2>num1 && num2>num3){
       return num2;
-    } else
+    } else {
         return num3;
+    }
 }
     console.log(maxOfThree(1,7,3));
 
@@ -31,13 +33,22 @@ function maxOfThree(num1,num2,num3){
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // Then, write and example of using the function.
 
-function isVowel(char){
-    if (char == "a" || "e" || "i" || "o" || "u"){
+function isVowel(character){
+    if (character === "a"){
       return "true";
-    } else
-        return "false";
-}
-    console.log(isVowel('p'));
+      }else if (character === "e") {
+        return "true";
+        } else if (character === "i") {
+            return "true";
+            } else if (character === "o") {
+              return "true";
+              } else if (character === "u") {
+                return "true";
+                }else{
+                  return "false";
+                  }
+  }
+    console.log(isVowel("k"));
 
 
 // 4.
@@ -67,7 +78,6 @@ function avg(num1,num2,num3){
 function getLength(string){
   return (string).length
 }
-  // let string = "My name is Bethany"
   console.log(getLength("My name is Bethany"));
 
 // 7.
@@ -108,4 +118,4 @@ function madlib(plnoun,verb,adj,plnoun2){
   return "Funny " + plnoun + verb + "over " + adj + plnoun2 + ". ";
 }
 
-    console.log(madlib("dogs ", "slide ", "pretty ", "hills" ));
+  console.log(madlib("dogs ", "slide ", "pretty ", "hills "));
